@@ -4,8 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@1,700&family=Nunito:wght@700&family=Yellowtail&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/contatos.css">
     
     <title>Contato</title>
 </head>
@@ -18,29 +17,41 @@
 			<li><a href="index.html" alt="Página inicial">Home</a></li> <!--index-->
 			<li><a href="sobre.html" alt="Sobre">Sobre</a></li> <!--Quem somos-->
 			<li><a href="saibamais.html" alt="Saiba mais">Saiba mais </a></li> <!--SaibaMais -->
-			<li><a href="contato.html" Alt="Contato">Contato</a></li> <!--contato-->
+			<li><a href="#" Alt="Contato">Contato</a></li> <!--contato-->
 		</ul>
 	</nav>
 
 
     <section id="contato"> 
-		<h2>Contato</h2>
-		<p>Vem falar com a gente</p>
-
-		<div>
-			<img src="img/tel.png" alt="telefone">
-			<p><a href="tel:11980222732"> (11) 98022-2732</a></p>
-			
-		</div>
-
-		<div>
-			<img src="img/mail.png" alt="email">
-			<p> <a href="mailto:marcospatton@hotmail.com">marcospatton@hotmail.com</a></p>
-			
-		</div>
-	
-
+		<h1>Contato</h1>
+		
 	</section>
+
+		<div class="row">
+
+			<form action="https://api.staticforms.xyz/submit" method="POST" class="card"><br/>
+			<input type="hidden" name="accessKey" value="2b22acde-f635-479c-b19a-ed3e9adfea20">
+			<input type="hidden" name="redirectTo" value="https://equipe4gama.netlify.app/contato.html">
+
+				<label for="inputNome">Digite seu Nome:</label><br/>
+				<input type="text" id="inputNome" name="name" required maxlength="30" minlength="2">
+				<span></span>
+
+				<label for="inputEmail">Endereço de Email:</label><br/>
+				<input type="email" id="inputEmail" name="email" required maxlength="50"><br/>
+				<span></span>
+
+				<label for="textAreaMensagem"> Mensagem:</label><br/>
+				<textarea name="message" id="textAreaMensagem" required maxlength="100"></textarea>
+				<span></span>
+
+				<button>Enviar Mensagem</button>
+			</form>
+
+			
+		</div>
+
+	
 
     <a href="index.html">voltar home</a>
     
